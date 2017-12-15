@@ -1,0 +1,25 @@
+{
+  "name": "config-merge-cli",
+  "version": "0.0.1",
+  "description": "A json/yaml data/config merge cli tool",
+  "main": "cli.js",
+  "bin": {
+    "combine-config": "cli.js"
+  },
+  "keywords": [
+    "yaml",
+    "json",
+    "configuration",
+    "cli",
+    "config",
+    "merge"
+  ],
+  "author": "acao",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "meow": "^4.0.0",
+    "merge-config": "^2.0.0",
+    "write-data": "^1.0.0"
+  }
+}
