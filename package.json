@@ -1,6 +1,6 @@
 {
   "name": "config-merge-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A json/yaml data/config merge cli tool",
   "main": "cli.js",
   "bin": {
