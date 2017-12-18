@@ -1,4 +1,4 @@
-#! /usr/bin/node
+#! /usr/bin/env node
 const meow = require('meow');
 const Config = require('merge-config');
 const writeData = require('write-data');
