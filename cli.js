@@ -2,7 +2,6 @@
 const meow = require('meow');
 const Config = require('merge-config');
 const writeData = require('write-data');
-const chalk = require('chalk');
 const path = require('path');
 
 const { USAGE, logger, capitalize } = require('./util');

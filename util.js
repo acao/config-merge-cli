@@ -1,4 +1,6 @@
-export const USAGE = `
+const chalk = require('chalk');
+
+const USAGE = `
     Usage
       $ combine-config <paths> -d output/path.json (or .yaml)
 
@@ -18,13 +20,19 @@ export const USAGE = `
         combine-config - wrote config to <cwd>/config.yml
   `;
 
-export const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1);
+const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 
-export const logger = (message, type = 'success') => {
+const logger = (message, type = 'success') => {
   const colors = {
     success: 'blue',
     error: 'red'
   };
   const color = colors[type];
   console.log(`${chalk[`bg${capitalize(color)}`](' combine-config ')} - ${chalk[color](message)}`);
+}
+
+module.exports = {
+  USAGE,
+  capitalize,
+  logger,
 }
